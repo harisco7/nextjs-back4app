@@ -1,0 +1,78 @@
+{
+  "name": "nextjs-back4app",
+  "author": "Haris Smajlagić",
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext ts --ext tsx --ext js",
+    "test": "jest",
+    "test-all": "yarn lint && yarn type-check && yarn test",
+    "codegen": "graphql-codegen --config codegen.yml --watch -r dotenv/config",
+    "dev-with-codegen": "concurrently \"npm run codegen\" \"npm run dev\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.@(ts|tsx|js)": [
+      "npm run lint",
+      "npm run format"
+    ]
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.21",
+    "@parse/react-ssr": "0.0.1-alpha.14",
+    "cookie": "^0.4.1",
+    "deepmerge": "^4.2.2",
+    "graphql": "^15.5.1",
+    "js-cookie": "^3.0.0",
+    "lodash": "^4.17.21",
+    "next": "^11.0.1",
+    "next-i18next": "^8.5.5",
+    "next-pwa": "^5.2.24",
+    "next-seo": "^4.26.0",
+    "parse": "^3.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "reseter.css": "^2.0.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.21.8",
+    "@graphql-codegen/near-operation-file-preset": "^1.18.6",
+    "@graphql-codegen/schema-ast": "^1.18.3",
+    "@graphql-codegen/typescript": "1.23.0",
+    "@graphql-codegen/typescript-operations": "1.18.4",
+    "@graphql-codegen/typescript-react-apollo": "2.3.1",
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/cookie": "^0.4.1",
+    "@types/js-cookie": "^2.2.7",
+    "@types/lodash": "^4.14.171",
+    "@types/node": "^16.4.7",
+    "@types/nprogress": "^0.2.0",
+    "@types/parse": "^2.18.8",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "concurrently": "^6.2.0",
+    "eslint": "^7.31.0",
+    "eslint-config-next": "^11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "lint-staged": "^11.1.1",
+    "prettier": "^2.3.2",
+    "sass": "^1.36.0",
+    "typescript": "^4.3.5"
+  }
+}

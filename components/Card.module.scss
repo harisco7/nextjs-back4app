@@ -1,0 +1,17 @@
+.root {
+  box-shadow: 0 5px 30px 0 rgb(255 255 255 / 20%);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  display: block;
+  padding: 25px;
+  min-height: 200px;
+  width: 100%;
+  min-width: 33vw;
+  max-width: 50vw;
+  color: rgba(0, 0, 0, 0.67);
+  text-shadow: 0 1px 3px rgb(0 0 0 / 25%);
+  margin: 0 auto;
+}

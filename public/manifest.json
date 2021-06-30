@@ -1,0 +1,9 @@
+{
+  "name": "Next JS and Back4App starter template",
+  "short_name": "Boilerplate",
+  "theme_color": "#0c3483",
+  "background_color": "#0c3483",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Starter template based on Typescript, GraphQL Code Generator and Apollo JS",
+  "signin-error": "Oops, something went wrong, please check your username/password.",
+  "signInHeader": "Sign in",
+  "signInSubHeader": "Log in here using your username and password",
+  "yourUsername": "Your username",
+  "yourPassword": "Your password",
+  "loginLabel": "Log in"
+}

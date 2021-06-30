@@ -1,0 +1,25 @@
+.root {
+  --borderColor: #fff;
+
+  > div {
+    display: block;
+    min-width: 250px;
+    margin-bottom: 1rem;
+
+    > button {
+      transition: box-shadow 400ms ease-out;
+      border-color: var(--accentColor);
+      background-color: var(--accentColor);
+      width: 100%;
+      margin-top: 1rem;
+      color: rgb(var(--textColor));
+      margin-bottom: 0;
+
+      &:focus-visible,
+      &:focus {
+        outline: none;
+        box-shadow: 0rem 0rem 2rem #d9d9d9, 0rem 0rem 2rem #ffffff;
+      }
+    }
+  }
+}

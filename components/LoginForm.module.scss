@@ -1,0 +1,55 @@
+.root {
+  --borderColor: #fff;
+
+  h4,
+  h5 {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  > div {
+    display: block;
+    min-width: 250px;
+    margin-bottom: 1rem;
+
+    &.error {
+      color: red;
+      font-weight: bold;
+
+      &:empty {
+        display: none;
+      }
+    }
+
+    > input,
+    label {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 0.5rem;
+    }
+
+    > input,
+    button {
+      transition: box-shadow 400ms ease-out;
+
+      &:focus-visible,
+      &:focus {
+        outline: none;
+        box-shadow: 0rem 0rem 2rem #d9d9d9, 0rem 0rem 2rem #ffffff;
+      }
+    }
+
+    > input {
+      border: 1px solid var(--borderColor);
+    }
+
+    > button {
+      border-color: var(--accentColor);
+      background-color: var(--accentColor);
+      width: 100%;
+      margin-top: 1rem;
+      color: rgb(var(--textColor));
+      margin-bottom: 0;
+    }
+  }
+}
