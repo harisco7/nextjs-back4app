@@ -12,7 +12,6 @@
     "format": "prettier --write .",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest",
-    "test-all": "yarn lint && yarn type-check && yarn test",
     "codegen": "graphql-codegen --config codegen.yml --watch -r dotenv/config",
     "dev-with-codegen": "concurrently \"npm run codegen\" \"npm run dev\""
   },
